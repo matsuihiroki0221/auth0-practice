@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "compilerOptions": {
+        "lib": ["dom", "es2015.promise", "es5"]
+  },
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}

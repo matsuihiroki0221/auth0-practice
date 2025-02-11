@@ -1,0 +1,5 @@
+﻿.github/dependabot.yml
+./*/node_modules
+.env
+assets/*
+!assets/.gitkeep
