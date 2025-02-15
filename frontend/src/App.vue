@@ -16,19 +16,4 @@ import LogIn from "./components/LogIn.vue";
 import LogOut from "./components/LogOut.vue";
 
 const { isAuthenticated, user } = useAuth0();
-
-// const fetchApiData = async () => {
-//   try {
-//     const token = await getAccessTokenSilently();
-//     const response = await fetch("https://your-api-endpoint.com/data", {
-//       headers: {
-//         Authorization: `Bearer ${token}`,
-//       },
-//     });
-//     const data = await response.json();
-//     console.log(data);
-//   } catch (error) {
-//     console.error(error);
-//   }
-// };
 </script>

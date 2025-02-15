@@ -11,9 +11,11 @@ app.use(
     domain: import.meta.env.VITE_AUTH0_DOMAIN,
     clientId: import.meta.env.VITE_WEBAPP_CLIENT_ID,
     authorizationParams: {
-      redirect_uri: window.location.origin
+      redirect_uri: window.location.origin,
+      audience: import.meta.env.VITE_AUTH0_API_AUDIENCE,
     }
   })
 );
+
 
 app.mount('#app');

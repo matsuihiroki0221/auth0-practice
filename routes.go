@@ -18,10 +18,10 @@ func SetupRouter(r *gin.Engine) *gin.Engine {
 
 	// 静的ファイルの公開
 	r.Static("/assets", "./public/assets")
-
 	// ルートパスでindex.htmlを公開
 	r.StaticFile("/", "./public/index.html")
 
+	// APIグループ
 	api := r.Group("/api")
 
 	// 認証が必要なエンドポイント
@@ -31,7 +31,7 @@ func SetupRouter(r *gin.Engine) *gin.Engine {
 		authRequired.GET("/users", handlers.GetUsersHandler)
 	}
 
-	// すべてのリクエストに対してindex.htmlを返却
+	// 該当しないリクエストパスにはindex.htmlを返却
 	r.NoRoute(func(c *gin.Context) {
 		c.File("./public/index.html")
 	})

@@ -10,6 +10,6 @@ export default defineConfig({
   envDir: './../',
   build: {
     outDir: './../public/',
-    emptyOutDir: false,
+    emptyOutDir: true,
   }
 })

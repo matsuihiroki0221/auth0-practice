@@ -2,6 +2,8 @@ module auth0-practice
 
 go 1.23.4
 
+require github.com/form3tech-oss/jwt-go v3.2.5+incompatible
+
 require (
 	github.com/auth0/go-jwt-middleware/v2 v2.2.2 // indirect
 	github.com/bytedance/sonic v1.12.8 // indirect
@@ -37,9 +39,11 @@ require (
 	golang.org/x/arch v0.13.0 // indirect
 	golang.org/x/crypto v0.32.0 // indirect
 	golang.org/x/net v0.34.0 // indirect
+	golang.org/x/sync v0.10.0 // indirect
 	golang.org/x/sys v0.29.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
 	google.golang.org/protobuf v1.36.4 // indirect
 	gopkg.in/go-jose/go-jose.v2 v2.6.3 // indirect
+	gopkg.in/square/go-jose.v2 v2.6.0
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
