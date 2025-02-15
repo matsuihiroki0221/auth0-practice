@@ -5,3 +5,4 @@
 !./public/.gitkeep
 assets/*
 !assets/.gitkeep
+./_debug_bin*
